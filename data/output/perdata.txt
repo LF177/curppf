@@ -1,0 +1,4 @@
+pertime: 2.87609
+peradd: 92.1676
+pertime: 25.1388
+peradd: inf
