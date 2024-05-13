@@ -1,0 +1,30 @@
+%YAML:1.0
+
+Downsampling.Step.Train.Model: 0.01 #离线模型体素降采样
+Downsampling.Step.Set.Scene: 0.01 #在线场景体素降采样
+
+#模型尺寸大小
+Model.Scale.x: 0.24
+Model.Scale.y: 0.12
+Model.Scale.z: 0.08
+
+
+Remove.Background.Position.Threshold: 10
+Remove.Background.Color.Threshold: 125 #if the color of the object is similar with background, this value should be very small
+
+
+Whether.Remove.Plane: 0
+
+#聚类姿态阈值
+Cluster.Position.Threshold: 1 
+Cluster.Rotation.Threshold: 0.5
+#步长
+Scene.Skip.Length: 1
+Sampling.Step.Relative: 0.01
+Angle.Step.Relative: 15
+
+Match.Minimum.Supports: 20
+#ICP优化参数
+Rescore.Threshold: 1
+Rescore.ICP.Threshold: 0.5
+ICP.Threshold: 1
